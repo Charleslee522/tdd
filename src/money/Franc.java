@@ -9,9 +9,4 @@ public class Franc extends Money {
 		return new Franc(amount * multiplier);
 	}
 	
-	@Override
-	public int hashCode() {
-		return amount;
-	}
-	
 }
