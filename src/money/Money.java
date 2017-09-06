@@ -2,7 +2,7 @@ package money;
 
 public class Money {
 
-	protected int amount;
+	public int amount;
 	protected String currency;
 
 	Money times(int multiplier) {
@@ -41,6 +41,10 @@ public class Money {
 	
 	public String currency() {
 		return this.currency;
+	}
+
+	public Money plus(Money addend) {
+		return new Money(amount + addend.amount, currency);
 	}
 	
 }
