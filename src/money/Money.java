@@ -51,6 +51,6 @@ public class Money implements Expression {
 	}
 
 	public Money reduce(String to) {
-		return null;
+		return new Money(amount, to);
 	}
 }

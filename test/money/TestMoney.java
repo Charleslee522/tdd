@@ -44,13 +44,19 @@ public class TestMoney {
 		Money result = bank.reduce(sum, "USD");
 		Assert.assertEquals(Money.dollar(7), result);
 	}
-	
+
 	@Test
 	public void testReduceMoney() {
 		Bank bank = new Bank();
 		Money result = bank.reduce(Money.dollar(3), "USD");
 		Assert.assertEquals(Money.dollar(3), result);
-		
+	}
+	
+	@Test
+	public void testReduceOtherCurrency() {
+		Bank bank = new Bank();
+		Money result = bank.reduce(Money.dollar(3), "CHF");
+		Assert.assertEquals(Money.franc(3), result);
 	}
 	
 }
