@@ -1,6 +1,10 @@
 package money;
 
 import org.junit.Test;
+
+import expression.Expression;
+import expression.Sum;
+
 import org.junit.Assert;
 
 public class TestMoney {

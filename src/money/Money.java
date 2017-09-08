@@ -1,5 +1,8 @@
 package money;
 
+import expression.Expression;
+import expression.Sum;
+
 public class Money implements Expression {
 
 	public int amount;
