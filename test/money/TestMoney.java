@@ -66,4 +66,9 @@ public class TestMoney {
 		Money result = bank.reduce(Money.franc(2), "USD");
 		Assert.assertEquals(Money.dollar(1), result);
 	}
+	
+	@Test
+	public void testArrayEquals() {
+		Assert.assertEquals(new Object[] {"abc"}, new Object[] {"abc"});
+	}
 }
