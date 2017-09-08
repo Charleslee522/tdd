@@ -64,6 +64,6 @@ public class TestMoney {
 		Bank bank = new Bank();
 		bank.addRate("CHF", "USD", 2);
 		Money result = bank.reduce(Money.franc(2), "USD");
-		Assert.assertEquals(Money.dollar(1), Money.franc(2));
+		Assert.assertEquals(Money.dollar(1), result);
 	}
 }
