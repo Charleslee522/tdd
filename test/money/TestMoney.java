@@ -45,4 +45,12 @@ public class TestMoney {
 		Assert.assertEquals(Money.dollar(7), result);
 	}
 	
+	@Test
+	public void testReduceMoney() {
+		Bank bank = new Bank();
+		Money result = bank.reduce(Money.dollar(3), "USD");
+		Assert.assertEquals(Money.dollar(3), result);
+		
+	}
+	
 }
