@@ -15,6 +15,6 @@ public class Bank {
 	}
 	
 	public int rate(String from, String to) {
-		return (from.equals("CHF") && to.equals("USD")) ? 2 : 1;
+		return (from.equals("CHF") && to.equals("USD")) ? rate : 1;
 	}
 }
