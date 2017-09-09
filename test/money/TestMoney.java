@@ -93,11 +93,13 @@ public class TestMoney {
 	public void testSumPlusMoney() {
 		Expression fiveBucks = Money.dollar(5);
 		Expression tenFrancs = Money.franc(10);
+		Expression thousandWon = Money.won(1000);
 		Bank bank = new Bank();
 		bank.addRate("CHF", "USD", 2);
-		Expression sum = new Sum(fiveBucks, tenFrancs).plus(fiveBucks);
+		bank.addRate("WON", "USD", 1000);
+		Expression sum = new Sum(fiveBucks, tenFrancs).plus(fiveBucks).plus(thousandWon);
 		Money result = bank.reduce(sum, "USD");
-		Assert.assertEquals(Money.dollar(15), result);
+		Assert.assertEquals(Money.dollar(16), result);
 	}
 	
 	@Test
@@ -111,4 +113,5 @@ public class TestMoney {
 		Money result = bank.reduce(sum, "USD");
 		Assert.assertEquals(Money.dollar(20), result);
 	}
+	
 }

@@ -3,7 +3,7 @@ package expression;
 import money.Bank;
 import money.Money;
 
-public class Sum implements Expression{
+public class Sum implements Expression {
 	public Expression augend;
 	public Expression addend;
 	
