@@ -8,7 +8,7 @@ public class Money implements Expression {
 	public int amount;
 	protected String currency;
 
-	Expression times(int multiplier) {
+	public Expression times(int multiplier) {
 		return new Money(amount * multiplier, currency);
 	}
 	
