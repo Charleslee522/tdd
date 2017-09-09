@@ -42,6 +42,10 @@ public class Money implements Expression {
 		return new Money(amount, "CHF");
 	}
 	
+	public static Money won(int amount) {
+		return new Money(amount, "WON");
+	}
+	
 	public String currency() {
 		return this.currency;
 	}
