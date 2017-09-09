@@ -1,10 +1,10 @@
 package mapping;
 
-class Pair {
+public class Pair {
 	public String from;
 	public String to;
 	
-	Pair(String from, String to) {
+	public Pair(String from, String to) {
 		this.from = from;
 		this.to = to;
 	}
