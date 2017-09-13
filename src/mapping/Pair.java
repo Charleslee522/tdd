@@ -17,6 +17,6 @@ public class Pair {
 	
 	@Override
 	public int hashCode() {
-		return 0;
+		return (from + '_' + to).hashCode();
 	}
 }
