@@ -1,2 +1,2 @@
 # tdd
-TDD Study repository by Charles
+TDD(Test Driven Development) Study repository by Charles
