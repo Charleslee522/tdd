@@ -69,6 +69,7 @@ public class TestMoney {
 		Assert.assertEquals(Money.dollar(1), result);
 	}
 	
+	@SuppressWarnings("deprecation")
 	@Test
 	public void testArrayEquals() {
 		Assert.assertEquals(new Object[] {"abc"}, new Object[] {"abc"});
